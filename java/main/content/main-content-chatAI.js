@@ -4,15 +4,15 @@ function smartReply(message) {
       
       if (msg.trim().toLowerCase() === "over") 
       return `đây là over hen link của bạn: <a href="https://hentaiz.bot/hentai/overflow-khong-che-1" target="_blank">Link</a><br>
-      <img src="/Enigmatic/png/overflow.webp" width="220" style="margin-top: 6px; border-radius: 10px;">`;
+      <img src="/png/overflow.webp" width="220" style="margin-top: 6px; border-radius: 10px;">`;
       
       if (msg.trim().toLowerCase() === "xem over") 
       return `đây là over video của bạn ( hiện tại video over chưa có )<br>
-      <button onclick="window.location.href='/Enigmatic/live/over.html'">Xem over</button>`;
+      <button onclick="window.location.href='/live/over.html'">Xem over</button>`;
       
       if (msg.trim().toLowerCase() === "beaoden") 
       return `đây là link của bạn:<br>
-      <button onclick="window.location.href='/Enigmatic/live/beaoden.html'">Xem</button>`;
+      <button onclick="window.location.href='/live/beaoden.html'">Xem</button>`;
       
       if (msg.trim().toLowerCase() === "/cmds") {
       return `
@@ -50,4 +50,4 @@ function smartReply(message) {
       `;
       
       return "xin lỗi, bot đang trong quá trình phát triển vui lòng thử lại lần sau, để xem cmd hiện có hãy nhắn <code>| HD |</code>";
-    }
+}
