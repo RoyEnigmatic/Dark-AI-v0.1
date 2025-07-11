@@ -7,7 +7,7 @@ function login() {
   // ✅ CHẶN ĐỂ TRỐNG
   if (!username || !password) {
     errorMsg.style.display = "block";
-    showToast(`<img src="/Enigmatic/img/svg/sign.svg" width="20" style="vertical-align: middle; margin-right: 6px;">Vui lòng nhập đầy đủ!`);
+    showToast(`<img src="/img/svg/sign.svg" width="20" style="vertical-align: middle; margin-right: 6px;">Vui lòng nhập đầy đủ!`);
     loginBox.classList.add("shake");
     setTimeout(() => loginBox.classList.remove("shake"), 500);
     return;
@@ -21,12 +21,12 @@ function login() {
     showMainUI(username);
 
     errorMsg.style.display = "none";
-    showToast(`<img src="/Enigmatic/img/svg/noti.svg" width="20" style="vertical-align: middle; margin-right: 6px;">Đăng nhập thành công!`);
+    showToast(`<img src="/img/svg/noti.svg" width="20" style="vertical-align: middle; margin-right: 6px;">Đăng nhập thành công!`);
   } else {
     // ❌ MẬT KHẨU SAI
     errorMsg.style.display = "block";
     loginBox.classList.add("shake");
-    showToast(`<img src="/Enigmatic/img/svg/sign.svg" width="20" style="vertical-align: middle; margin-right: 6px;">Mật khẩu sai rồi bro!`);
+    showToast(`<img src="/img/svg/sign.svg" width="20" style="vertical-align: middle; margin-right: 6px;">Mật khẩu sai rồi bro!`);
     setTimeout(() => loginBox.classList.remove("shake"), 500);
   }
 }
