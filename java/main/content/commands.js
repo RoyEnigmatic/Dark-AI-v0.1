@@ -84,7 +84,7 @@ function runCommand() {
     }
 
     if (!changed) {
-      showToast(`<img src='/Enigmatic/img/svg/sign.svg' style='width:16px; vertical-align: middle; margin-right: 6px;'> Thiếu tham số -m hoặc -b để đổi tên.`);
+      showToast(`<img src='/img/svg/sign.svg' style='width:16px; vertical-align: middle; margin-right: 6px;'> Thiếu tham số -m hoặc -b để đổi tên.`);
     }
 
     updateNames();
@@ -92,7 +92,7 @@ function runCommand() {
     output.textContent = `$ Đã thực hiện lệnh: ${command}`;
   } else {
     output.style.display = "block";
-    output.innerHTML = `<img src='/Enigmatic/img/svg/error.svg' style='width:16px; vertical-align: middle; margin-right: 4px;'> error '<code>${command}</code>' không được hỗ trợ. Dùng <code>echo help</code> để xem thêm.`;
+    output.innerHTML = `<img src='/img/svg/error.svg' style='width:16px; vertical-align: middle; margin-right: 4px;'> error '<code>${command}</code>' không được hỗ trợ. Dùng <code>echo help</code> để xem thêm.`;
   }
 }
 
