@@ -2,7 +2,7 @@ function smartReply(message) {const msg = message.toLowerCase();
 // main content
       if (msg.trim().toLowerCase() === "over") 
       return `đây là over hen link của bạn: <a href="https://hentaiz.bot/hentai/overflow-khong-che-1" target="_blank">Link</a><br>
-      <img src="/img/overflow.webp" width="220" style="margin-top: 6px; border-radius: 10px;">`;
+      <img src="/Dark-AI-v0.1/img/overflow.webp" width="220" style="margin-top: 6px; border-radius: 10px;">`;
       
       if (msg.trim().toLowerCase() === "xem over") 
       return `đây là over video của bạn ( hiện tại video over chưa có )<br>
@@ -150,7 +150,7 @@ function runCommand() {
     }
 
     if (!changed) {
-      showToast(`<img src='/img/erro.svg' style='width:16px; vertical-align: middle; margin-right: 6px;'> Thiếu tham số -m hoặc -b để đổi tên.`);
+      showToast(`<img src='/Dark-AI-v0.1/img/erro.svg' style='width:16px; vertical-align: middle; margin-right: 6px;'> Thiếu tham số -m hoặc -b để đổi tên.`);
     }
 
     updateNames();
@@ -158,7 +158,7 @@ function runCommand() {
     output.textContent = `$ Đã thực hiện lệnh: ${command}`;
   } else {
     output.style.display = "block";
-    output.innerHTML = `<img src='/img/error.svg' style='width:16px; vertical-align: middle; margin-right: 4px;'> error '<code>${command}</code>' không được hỗ trợ. Dùng <code>echo help</code> để xem thêm.`;
+    output.innerHTML = `<img src='/Dark-AI-v0.1/img/error.svg' style='width:16px; vertical-align: middle; margin-right: 4px;'> error '<code>${command}</code>' không được hỗ trợ. Dùng <code>echo help</code> để xem thêm.`;
   }
 }
 
