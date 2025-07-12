@@ -8,7 +8,7 @@ function login() {
 
   if (!username || !password) {
     errorMsg.style.display = "block";
-    showToast(`<img src="/img/human-black.svg" width="20" style="vertical-align: middle; margin-right: 6px;">Vui lòng nhập đầy đủ!`);
+    showToast(`<img src="/Dark-AI-v0.1/img/human-black.svg" width="20" style="vertical-align: middle; margin-right: 6px;">Vui lòng nhập đầy đủ!`);
     loginBox.classList.add("shake");
     setTimeout(() => loginBox.classList.remove("shake"), 500);
     return;
@@ -21,11 +21,11 @@ function login() {
     showMainUI(username);
 
     errorMsg.style.display = "none";
-    showToast(`<img src="/img/noti.svg" width="20" style="vertical-align: middle; margin-right: 6px;">Đăng nhập thành công!`);
+    showToast(`<img src="/Dark-AI-v0.1/img/noti.svg" width="20" style="vertical-align: middle; margin-right: 6px;">Đăng nhập thành công!`);
   } else {
     errorMsg.style.display = "block";
     loginBox.classList.add("shake");
-    showToast(`<img src="/img/dead.svg" width="20" style="vertical-align: middle; margin-right: 6px;">Mật khẩu sai rồi bro!`);
+    showToast(`<img src="/Dark-AI-v0.1/img/dead.svg" width="20" style="vertical-align: middle; margin-right: 6px;">Mật khẩu sai rồi bro!`);
     setTimeout(() => loginBox.classList.remove("shake"), 500);
   }
 }
